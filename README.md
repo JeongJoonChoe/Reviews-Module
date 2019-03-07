@@ -16,6 +16,30 @@
 
 > Some usage instructions
 
+### API Endpoints
+---
+
+#### Room Reviews
+
+`GET` /rooms/reviews/recent
+
+`GET` /rooms/reviews/relevant
+
+`GET` /rooms/reviews/filter
+
+`POST` /rooms/reviews/:review_id
+
+`PUT` /rooms/reviews/:review_id
+
+`DELETE` /rooms/reviews/:review_id
+
+#### Parameters
+
+| Name | Type | Description |
+|------|------|-------------|
+| Review Id | int | Id of review |
+
+
 ## Requirements
 
 An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).

@@ -32,7 +32,7 @@ class App extends React.Component {
 
   async grabReviews() {
     try {
-      const response = await axios.get('/rooms/reviews/recent');
+      const response = await axios.get('/rooms/reviews/recent', { params: {data: 1}});
       this.setupReviews(response.data);
     } catch (error) {
       console.error(error);
